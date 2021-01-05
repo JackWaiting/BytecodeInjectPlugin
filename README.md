@@ -28,30 +28,32 @@ Copyright (C) 2019-2021 by JackWaiting, All rights reserved.
 往所有方法中插入执行时间统计代码，优化耗时方法。
 
 1、配置 gralde 
-buildscript {
 
-    repositories {
-        maven { url "https://dl.bintray.com/jackwaiting/maven/" }
+    buildscript {
+
+        repositories {
+            maven { url "https://dl.bintray.com/jackwaiting/maven/" }
+        }
+        dependencies {
+            classpath 'com.android.tools.build:gradle:3.4.2'
+            classpath 'com.jackwaiting.bytecode.inject.plugin:bytecode-inject-release:1.0.4'
+        }
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.2'
-        classpath 'com.jackwaiting.bytecode.inject.plugin:bytecode-inject-release:1.0.4'
-    }
-}
+
 
 2、module gradle 使用插件
 
-apply plugin: 'bytecode-inject-android'
+    apply plugin: 'bytecode-inject-android'
 
-jack_extensions {
-  enable true  //是否插入代码开关
+    jack_extensions {
+      enable true  //是否插入代码开关
 
-  // 指定插入到方法开头的变量与变量类型
-  codeLocalVariable "startTime"  //定义变量
-  codeLocalVariableType "long" //定义变量类型
+      // 指定插入到方法开头的变量与变量类型
+      codeLocalVariable "startTime"  //定义变量
+      codeLocalVariableType "long" //定义变量类型
 
-  // 指定插入到方法开头和结束处的代码,支持简单变量，包括<class-name>，<simple-class-name>，<method-name>
-  codeBeforeMethod "startTime = System.currentTimeMillis();"
-  codeAfterMethod "System.out.println(\"（bytecode-inject-android）<class-name>\$<method-name> 执行的时间： \" " +
-          "+(System.currentTimeMillis() - startTime) +\"ms\");"
-}
+      // 指定插入到方法开头和结束处的代码,支持简单变量，包括<class-name>，<simple-class-name>，<method-name>
+      codeBeforeMethod "startTime = System.currentTimeMillis();"
+      codeAfterMethod "System.out.println(\"（bytecode-inject-android）<class-name>\$<method-name> 执行的时间： \" " +
+              "+(System.currentTimeMillis() - startTime) +\"ms\");"
+    }
