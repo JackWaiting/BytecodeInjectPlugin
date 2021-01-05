@@ -57,7 +57,7 @@ Copyright (C) 2019-2021 by JackWaiting, All rights reserved.
               "+(System.currentTimeMillis() - startTime) +\"ms\");"
     }
     
-### 3、 执行日志结果效果
+### 3、 执行日志效果
 
 - 2021-01-05 12:23:16.603 19195-19221/com.jackwaiting.gradleplugin I/System.out: （bytecode-inject-android）com.sf.module.liblog.utils.Settings$getLogPath 执行的时间： 0ms
 - 2021-01-05 12:23:16.604 19195-19221/com.jackwaiting.gradleplugin I/System.out: （bytecode-inject-android）com.sf.module.liblog.strategy.LogStrategyImpl$writeEx 执行的时间： 1ms
