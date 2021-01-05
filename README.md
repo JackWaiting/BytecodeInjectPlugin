@@ -11,7 +11,7 @@ Copyright (C) 2019-2021 by JackWaiting, All rights reserved.
 - 2、支持插入自定义变量名 (支持 byte,short,int long,boolean,char,float,double)
 - 3、适配 Java 与 Kotlin 代码
 - 4、支持 Module 与 Lib 同时代码插入
-- 5、支持简单变量标签，包括（<class-name>，<simple-class-name>，<method-name>）
+- 5、支持简单变量标签，包括（class-name，simple-class-name，method-name）
 
 ## Extension 介绍
 
