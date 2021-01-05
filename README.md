@@ -35,7 +35,6 @@ Copyright (C) 2019-2021 by JackWaiting, All rights reserved.
             maven { url "https://dl.bintray.com/jackwaiting/maven/" }
         }
         dependencies {
-            classpath 'com.android.tools.build:gradle:3.4.2'
             classpath 'com.jackwaiting.bytecode.inject.plugin:bytecode-inject-release:1.0.4'
         }
     }
