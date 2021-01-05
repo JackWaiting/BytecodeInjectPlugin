@@ -1,0 +1,2 @@
+include ':app','liblog',':bytecode-inject-release'
+rootProject.name = "bytecodeInjectPlugin"
