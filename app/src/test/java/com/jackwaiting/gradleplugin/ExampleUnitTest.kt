@@ -1,4 +1,4 @@
-package com.hencoder.gradleplugin
+package com.jackwaiting.gradleplugin
 
 import org.junit.Test
 
