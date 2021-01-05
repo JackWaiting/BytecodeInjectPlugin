@@ -57,3 +57,7 @@ Copyright (C) 2019-2021 by JackWaiting, All rights reserved.
       codeAfterMethod "System.out.println(\"（bytecode-inject-android）<class-name>\$<method-name> 执行的时间： \" " +
               "+(System.currentTimeMillis() - startTime) +\"ms\");"
     }
+    
+3、 结果
+
+![pic_01](https://img-blog.csdnimg.cn/20210105120850883.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5nZ2FuZzc0MA==,size_16,color_FFFFFF,t_70#pic_center)
