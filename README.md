@@ -27,7 +27,7 @@ Copyright (C) 2019-2021 by JackWaiting, All rights reserved.
 
 往所有方法中插入执行时间统计代码，优化耗时方法。
 
-- 1、配置 gralde 
+### 1、配置 gralde 
 
     buildscript {
 
@@ -40,8 +40,7 @@ Copyright (C) 2019-2021 by JackWaiting, All rights reserved.
         }
     }
 
-
-- 2、module gradle 使用插件
+### 2、module gradle 使用插件
 
     apply plugin: 'bytecode-inject-android'
 
@@ -58,10 +57,10 @@ Copyright (C) 2019-2021 by JackWaiting, All rights reserved.
               "+(System.currentTimeMillis() - startTime) +\"ms\");"
     }
     
-- 3、 执行日志结果效果
+### 3、 执行日志结果效果
 
 - 2021-01-05 12:23:16.603 19195-19221/com.jackwaiting.gradleplugin I/System.out: （bytecode-inject-android）com.sf.module.liblog.utils.Settings$getLogPath 执行的时间： 0ms
-- 2021-01-05 12:23:16.604 19195-19221/com.jackwaiting.gradleplugin I/System.out: （bytecode-inject-android）com.sf.module.liblog.strategy.LogStrategyImpl$writeEx 执- 行的时间： 1ms
+- 2021-01-05 12:23:16.604 19195-19221/com.jackwaiting.gradleplugin I/System.out: （bytecode-inject-android）com.sf.module.liblog.strategy.LogStrategyImpl$writeEx 执行的时间： 1ms
 - 2021-01-05 12:23:16.604 19195-19195/com.jackwaiting.gradleplugin I/System.out: （bytecode-inject-android）com.sf.module.liblog.strategy.LogStrategyImpl$wInfo 执行的时间： 9ms
 - 2021-01-05 12:23:16.604 19195-19195/com.jackwaiting.gradleplugin I/System.out: （bytecode-inject-android）com.sf.module.liblog.BoxLogger$wInfo 执行的时间： 10ms
 - 2021-01-05 12:23:16.604 19195-19195/com.jackwaiting.gradleplugin I/System.out: （bytecode-inject-android）com.jackwaiting.gradleplugin.MainActivity$onResume 执行的时间： 11ms
