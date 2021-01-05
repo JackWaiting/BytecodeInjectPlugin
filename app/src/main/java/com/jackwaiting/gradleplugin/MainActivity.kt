@@ -1,10 +1,9 @@
-package com.hencoder.gradleplugin
+package com.jackwaiting.gradleplugin
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.jackwaiting.gradleplugin.R
 import com.sf.module.liblog.BoxLogger
-import com.sf.module.liblog.strategy.LogConfigs
 
 class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {

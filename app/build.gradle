@@ -3,7 +3,6 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'bytecode-inject-android'
 
-
 jack_extensions {
   enable true  //是否插入代码开关
 
